@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Diconic</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    @keyframes spin {
+      from { transform: rotate(0deg) }
+      to { transform: rotate(360deg) }
+    }
+    .spin { animation: spin 3s linear infinite; }
+
+    /* (B) 3D SPINNING ANIMATION */
+    @keyframes spin3D {
+      from { transform: rotateY(0deg) }
+      to { transform: rotateY(360deg) }
+    }
+    .spin3D { animation: spin3D 3s ease-in-out infinite; }
+
+    /* (C) SPIN ON HOVER */
+    .spinh:hover { animation: spin3D 1s ease 1; }
+  </style>
+  <style>
+    .chatbot-btn {
+        position: fixed;
+        bottom: 20px; /* Jarak dari bawah */
+        right: 60px;  /* Jarak dari kanan */
+        background-color: transparent; /* Warna hijau WhatsApp */
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    .chatbot-btn:hover {
+        background-color: transparent; /* Warna hijau gelap WhatsApp saat hover */
+    }
+    .chatbot-icon {
+        width: 40px;
+        height:40px;
+    }
+    .tooltip {
+      visibility: hidden;
+      position: absolute;
+      background-color: #10a044;  /* Semi-transparent black background */
+      color: white;
+      border-radius: 25px;
+      padding: 10px 18px;
+      font-size: 16px;
+      text-align: center;
+      bottom: 110%;  /* Position it above the button */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s, visibility 0.3s;
+      pointer-events: none;  /* Prevent the tooltip from interfering with mouse events */
+    }
+    .chatbot-btn:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+  <!-- =======================================================
+  * Template Name: Bocor - v2.0.0
+  * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/Logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="assets/img/Company-Profile-Diconic-v4.2.pdf" target="_blank">Portfolio</a></li>
+          <li><a href="#team">Kategori</a></li>
+          <li><a href="#artikel">Artikel</a></li>
+
+          <li class="get-started"><a href="https://wa.me/6281280847164">Hubungi Kami</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+  
+  <a href="https://wa.me/6281280847164" target="_blank" class="chatbot-btn">
+    <img src="assets/img/whatsapp.png" alt="" class="chatbot-icon">
+    <span class="tooltip">Yuk,Hubungi..!!</span>
+  </a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row d-flex align-items-center">
+      <div class="col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+        <h1>Diconic</h1>
+        <h2>Play Your Imagination Beyond The Boundaries</h2>
+        <a href="https://wa.me/6281280847164" class="btn-get-started scrollto">Hubungi Kami</a>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left">
+        <img src="assets/img/Cube.png" class="img-fluid" alt="">
+      </div>
+    </div>
+    </div>
+
+  </section><!-- End Hero -->
+  
+  <main id="main">
+    <!-- ======= Clients Section =======-->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="" data-aos="flip-right">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="100">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="200">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="300">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="400">
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!--End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+            <div class="content d-flex flex-column justify-content-center">
+              <h3 data-aos="fade-in" data-aos-delay="100">MENGAPA MEMILIH DICONIC</h3>
+              <p data-aos="fade-in">
+                Kami menciptakan E-Learning interaktif dan responsif dengan standart yang tinggi dan dieseuaikan dengan kebutuhan pengguna agar dapat berpartisipasi aktif di dalam pembelajaran.
+              </p>
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="bx bx-mobile"></i>
+                  <h4><a href="#">Teknologi Mobile</a></h4>
+                  <p></p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-edit-alt"></i>
+                  <h4><a href="#">Interaktif</a></h4>
+                  <p></p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-images"></i>
+                  <h4><a href="#">Resourceful</a></h4>
+                  <p></p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bx bx-wallet"></i>
+                  <h4><a href="#">Harga Terjangkau</a></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Layanan</h2>
+          <p data-aos="fade-in"></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/services-1.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Learning Management System</a></h5>
+                <p class="card-text">Kami Menyediakan Solusi TI untuk kebutuhan e-Learning di Perusahaan yang cocok untuk berbagai sektor bisnis</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/services-2.jpg" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Pengembangan Content E-Learning</a></h5>
+                <p class="card-text">Kami Mengembangkan Konten e-Learning interaktif dengan strategi belajar yang beragam dan sesuai dengan karakter peserta</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Kategori</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/features-1.png" alt=""></div>
+              <h4>Interactive Learning</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/features-2.png" alt=""></div>
+              <h4>Interactive Video Shooting</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="assets/img/features-4.png" alt=""></div>
+              <h4>Microlearning</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-5.png" alt=""></div>
+              <h4>Podcast</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-6.png" alt=""></div>
+              <h4>Virtual Reality</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-7.png" alt=""></div>
+              <h4>Video Shooting</h4>
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-8.png" alt=""></div>
+              <h4>Whiteboard Animation</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-9.png" alt=""></div>
+              <h4>Interactive Comics</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-10.png" alt=""></div>
+              <h4>2D Animation Video</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-11.png" alt=""></div>
+              <h4>3D Animation Video</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-12.png" alt=""></div>
+              <h4>E-Learning Basic</h4>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/features-14.png" alt=""></div>
+              <h4>Explanatory Video</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="artikel" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Artikel</h2>
+          <p data-aos="fade-in"></p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/artikel-1.png" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Evaluasi dan Asesmen dalam Konteks E-Learning</a></h5>
+                <p class="card-text">E-learning adalah proses pembelajaran yang dilakukan melalui jaringan internet atau intranet. Dengan e-learning, peserta didik dapat mengakses bahan ajar dan instruksi pembelajaran kapan saja dan dari mana saja.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Selengkapnya</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/artikel-2.png" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Dampak Aplikasi Mobile dalam Pendidikan</a></h5>
+                <p class="card-text">Penggunaan smartphone telah menjadi bagian tak terpisahkan dari kehidupansehari-hari kita. Smartphone tidak hanya digunakan untuk berkomunikasi, tetapi juga sebagai alat multi-fungsi yang menyediakan akses ke berbagai aplikasi dan informasi di ujung jari kita.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Selengkapnya</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-right">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/artikel-3.png" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">6 Manfaat Utama Pemetaan Keterampilan untuk Organisasi</a></h5>
+                <p class="card-text">Manajemen keterampilan merupakan pendekatan strategis penting bagi organisasi berbasis keterampilan modern yang menempatkan orang-orangnya di pusat SDM. Manajemen keterampilan berfokus pada...</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Selengkapnya</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-left">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/artikel-4.png" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Potensi Bisnis Elearning Pasca Pandemi</a></h5>
+                <p class="card-text">Pandemi COVID-19 telah mengubah tatanan dunia, termasuk pendidikan. Dampaknya, perguruan tinggi di seluruh dunia termasuk Indonesia, harus beradaptasi dengan metode pembelajaran berbasis daring seperti e-learning.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Selengkapnya</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-in">Kontak</h2>
+        </div>
+
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box" data-aos="fade-up">
+                  <i class="bx bx-map"></i>
+                  <h3>Alamat Kantor</h3>
+                  <p>Disctric8, Treasury Tower Lt. 6 Unit F,Jl. Jend. Sudirman Kav. 52-53,</p>
+                  <p>SCBD.Lot 28 RT. 005 RW. 003, Senayan,Kebayoran Baru, Jakarta Selatan</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email</h3>
+                  <p>ide@diconic.coid</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Kontak</h3>
+                  <p>(0265) 7600293</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Diconic</h3>
+            <p>Play Your Imagination Beyond The Boundaries</p>
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="mailto:ide@diconic.coid" method="post">
+              <input type="email" name="email" placeholder="Masukkan Email"><input type="submit" value="Kirim Pesan">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Diconic</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
+        Designed by <a href="https://diconic.co.id" target="_blank">Diconic</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
